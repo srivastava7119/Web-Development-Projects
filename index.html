@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemant Fitness Club</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    /* css reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('gym1.webp');
+        height: 700px;
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        /* margin-block: 30px; */
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid white; */
+        left: 30px;
+        top: 15px;
+        cursor: pointer;
+        /* color:black; */
+    }
+
+    .left img {
+        width: 125px;
+        padding: 0%;
+    }
+
+    .left div {
+        text-align: center;
+        margin-top: -10px;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        line-height: 0%;
+    }
+
+    .mid {
+        /* border: 2px solid white; */
+        display: block;
+        width: 40%;
+        margin: 15px auto;
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 30px;
+        top: 25px;
+        /* border: 2px solid white; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 20px;
+        /* font-size: 25px; */
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: black;
+        text-decoration: underline;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px auto;
+        background-color: black;
+        color: white;
+        padding: 10px 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    /* .btn signin{
+        padding-left: 10px;
+    } */
+    .btn:hover {
+        border: 2px solid black;
+        color: black;
+        background-color: white;
+
+    }
+
+    .container {
+        display: block;
+        border: 5px solid black;
+        margin: 100px auto;
+        /* margin-top: 1000px; */
+        width: 40%;
+        padding: 20px 2px;
+        border-radius: 10px;
+    }
+
+    .container h1 {
+        text-align: center;
+
+        color: black;
+
+        /* margin-top: 0px; */
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        margin: 4px auto;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Baloo Bhai 2', cursive;
+        width: 400px;
+        border-radius: 5px;
+        border: 2px solid black;
+    }
+
+    .container .btn {
+        width: 100px;
+        display: block;
+        margin: 15px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- logo -->
+            <img src="dumbell.webp" alt="">
+            <!-- <img src="Nritya newlogo.png" alt=""> -->
+            <div>Hemant Fitness Club</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+        <!-- right bar for buttons -->
+        <div class="right">
+            <button class="btn">Be a member</button>
+            <button class="btn" id="signin">Sign in</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Fill your details</h1>
+        <form action="nothing.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Subscription">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
